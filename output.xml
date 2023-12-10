@@ -1,39 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231208 11:28:07.398" rpa="false" schemaversion="4">
-<suite id="s1" name="Teste" source="C:\Users\Amanda Souza\teste_amanda\MeuProjeto\teste">
-<suite id="s1-s1" name="Minha Suite" source="C:\Users\Amanda Souza\teste_amanda\MeuProjeto\teste\minha_suite.robot">
-<test id="s1-s1-t1" name="Cenário" line="6">
-<kw name="Abrir Página de Amanda" library="minha_página">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231208 11:28:07.810" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.br/'.</msg>
-<status status="PASS" starttime="20231208 11:28:07.810" endtime="20231208 11:28:11.804"/>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231210 19:45:23.133" rpa="false" schemaversion="4">
+<suite id="s1" name="MeuProjeto" source="C:\Users\Amanda Souza\teste_amanda\MeuProjeto">
+<suite id="s1-s1" name="Teste" source="C:\Users\Amanda Souza\teste_amanda\MeuProjeto\teste">
+<suite id="s1-s1-s1" name="Minha Suite" source="C:\Users\Amanda Souza\teste_amanda\MeuProjeto\teste\minha_suite.robot">
+<test id="s1-s1-s1-t1" name="Form Test" line="18">
+<kw name="Open Application">
+<msg timestamp="20231210 19:45:23.433" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<status status="FAIL" starttime="20231210 19:45:23.433" endtime="20231210 19:45:23.433"/>
 </kw>
-<status status="PASS" starttime="20231208 11:28:07.809" endtime="20231208 11:28:11.804"/>
+<kw name="Fill Out Form With Valid Information" library="minha_página">
+<status status="NOT RUN" starttime="20231210 19:45:23.438" endtime="20231210 19:45:23.438"/>
 </kw>
-<kw name="Verificar Título da Página" library="minha_página">
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20231208 11:28:11.813" level="INFO">${title} = Google</msg>
-<status status="PASS" starttime="20231208 11:28:11.805" endtime="20231208 11:28:11.813"/>
-</kw>
-<kw name="Should Be Equal As Numbers" library="BuiltIn">
-<arg>${title}</arg>
-<arg>${TITLE}</arg>
-<doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<msg timestamp="20231208 11:28:11.813" level="FAIL">'Google' cannot be converted to a floating point number: ValueError: could not convert string to float: 'Google'</msg>
-<status status="FAIL" starttime="20231208 11:28:11.813" endtime="20231208 11:28:11.814"/>
-</kw>
-<status status="FAIL" starttime="20231208 11:28:11.805" endtime="20231208 11:28:11.814"/>
-</kw>
-<status status="FAIL" starttime="20231208 11:28:07.809" endtime="20231208 11:28:11.814">'Google' cannot be converted to a floating point number: ValueError: could not convert string to float: 'Google'</status>
+<status status="FAIL" starttime="20231210 19:45:23.426" endtime="20231210 19:45:23.438">No keyword with name 'Open Application' found.</status>
 </test>
-<status status="FAIL" starttime="20231208 11:28:07.432" endtime="20231208 11:28:11.816"/>
+<status status="FAIL" starttime="20231210 19:45:23.193" endtime="20231210 19:45:23.442"/>
 </suite>
-<status status="FAIL" starttime="20231208 11:28:07.403" endtime="20231208 11:28:11.818"/>
+<status status="FAIL" starttime="20231210 19:45:23.188" endtime="20231210 19:45:23.444"/>
+</suite>
+<status status="FAIL" starttime="20231210 19:45:23.134" endtime="20231210 19:45:23.444"/>
 </suite>
 <statistics>
 <total>
@@ -42,10 +26,12 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Teste">Teste</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Minha Suite">Teste.Minha Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="MeuProjeto">MeuProjeto</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Teste">MeuProjeto.Teste</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Minha Suite">MeuProjeto.Teste.Minha Suite</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20231210 19:45:23.426" level="ERROR">Error in file 'C:\Users\Amanda Souza\teste_amanda\MeuProjeto\resources\minha_página.robot' on line 12: Creating keyword 'Fill Out Form With Valid Information' failed: Invalid argument specification: Invalid argument syntax '${name} ${numero} ${data} ${numero} ${name}'.</msg>
 </errors>
 </robot>
