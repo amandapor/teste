@@ -1,7 +1,10 @@
-Feature: Projeto_teste com Robot Framework e Cucumber
+Feature: Dados do veículo
 
-  Scenario: Acessar uma página e verificar o título
-    Given que eu estou na página de Amanda
-    When verifico o título da página
-    Then o título deve ser "Página de Amanda"
+        Cenario: Preencher o Formulário
+            Given I open the URL
+             When  I fill out the form with valid information
+              And click on the Next button
+             Then the system must advance to the next tab “Enter Insurant Data”
 
+
+        
